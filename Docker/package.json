@@ -1,0 +1,11 @@
+{
+  "name": "node-multi-stage-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "echo Build step - could be webpack or babel in real apps"
+  },
+  "dependencies": {}
+}
+
