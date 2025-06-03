@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Cart</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+
+    header {
+      background-color: #ff6347;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .cart-item img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .item-info {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+
+    .item-details h4 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .item-details p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .item-price {
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .checkout {
+      text-align: right;
+      margin-top: 30px;
+    }
+
+    .checkout button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .checkout button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🍔 My Food Cart
+  </header>
+
+  <div class="container">
+    <div class="cart-item">
+      <div class="item-info">
+        <img src="https://via.placeholder.com/70" alt="Burger" />
+        <div class="item-details">
+          <h4>Cheese Burger</h4>
+          <p>Extra cheese, No onion</p>
+        </div>
+      </div>
+      <div class="item-price">$5.99</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-info">
+        <img src="https://via.placeholder.com/70" alt="Pizza" />
+        <div class="item-details">
+          <h4>Margherita Pizza</h4>
+          <p>12 inch, Thin crust</p>
+        </div>
+      </div>
+      <div class="item-price">$8.49</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-info">
+        <img src="https://via.placeholder.com/70" alt="Fries" />
+        <div class="item-details">
+          <h4>French Fries</h4>
+          <p>Large size</p>
+        </div>
+      </div>
+      <div class="item-price">$3.49</div>
+    </div>
+
+    <div class="checkout">
+      <button>Proceed to Checkout</button>
+    </div>
+  </div>
+
+</body>
+</html>
+

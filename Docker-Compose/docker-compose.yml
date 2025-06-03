@@ -1,0 +1,21 @@
+
+version: "3"
+services:
+  ticketapp:
+    container_name: ticket
+    build: ./ticketapp
+    ports:
+      - "4141:80"
+
+  foodapp:
+    container_name: foodapp
+    build: ./foodapp
+    ports:
+      - "4142:80"
+
+  healthcare:
+    container_name: healthcare
+    build: ./healthcare_app
+    ports:
+      - "4143:80"
+
